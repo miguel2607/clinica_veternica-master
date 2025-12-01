@@ -9,7 +9,7 @@ services:
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-clinica_veterinaria}
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-kepler2607}
     ports:
       - "5432:5432"
     volumes:
@@ -34,14 +34,14 @@ services:
       SPRING_PROFILES_ACTIVE: docker
       DATABASE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:-clinica_veterinaria}
       DB_USERNAME: ${POSTGRES_USER:-postgres}
-      DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-kepler2607}
       JWT_SECRET: ${JWT_SECRET:-404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
       JWT_EXPIRATION: ${JWT_EXPIRATION:-86400000}
       # Email configuration
       MAIL_HOST: ${MAIL_HOST:-smtp.gmail.com}
       MAIL_PORT: ${MAIL_PORT:-587}
-      MAIL_USERNAME: ${MAIL_USERNAME}
-      MAIL_PASSWORD: ${MAIL_PASSWORD}
+      MAIL_USERNAME: ${MAIL_USERNAME:-miguelitorodriguezaranzazu@gmail.com}
+      MAIL_PASSWORD: ${MAIL_PASSWORD:-asjkgbztsxkosydo}
       MAIL_FROM_NAME: ${MAIL_FROM_NAME:-Clínica Veterinaria}
     ports:
       - "8080:8080"
